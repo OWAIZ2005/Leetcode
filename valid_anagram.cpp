@@ -3,22 +3,23 @@ class Solution
 public:
     bool isAnagram(string s, string t)
     {
-
-        if (s.length() != t.length())
+        if (s.size() != t.size())
         {
             return false;
         }
+        int n = s.size();
 
-        unordered_map<char, int> a_map;
-        for (int i = 0; i < s.length(); i++)
+        int freq[26] = {0};
+
+        for (int i = 0; i < n; i++)
         {
-            a_map[s[i]]++;
-            a_map[t[i]]--;
+            freq[s[i] - 'a']++; // s[i]-a gives the  index
+            freq[t[i] - 'a']--;
         }
 
-        for (auto m = a_map.begin(); m != a_map.end(); m++)
+        for (int i = 0; i < 26; i++)
         {
-            if (m->second != 0)
+            if (freq[i] != 0)
             {
                 return false;
             }
