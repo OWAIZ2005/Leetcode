@@ -7,19 +7,28 @@ public:
         {
             return false;
         }
-        int n = s.size();
 
-        int freq[26] = {0};
+        int m = s.size();
+        int n = t.size();
 
-        for (int i = 0; i < n; i++)
+        unordered_map<char, int> mp1;
+        unordered_map<char, int> mp2;
+
+        for (int i = 0; i < m; i++)
         {
-            freq[s[i] - 'a']++; // s[i]-a gives the  index
-            freq[t[i] - 'a']--;
+            char c = s[i];
+            mp1[c]++;
         }
 
-        for (int i = 0; i < 26; i++)
+        for (int j = 0; j < n; j++)
         {
-            if (freq[i] != 0)
+            char d = t[j];
+            mp2[d]++;
+        }
+
+        for (auto it : mp2)
+        {
+            if (mp1[it.first] != it.second)
             {
                 return false;
             }
