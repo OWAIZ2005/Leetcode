@@ -6,7 +6,7 @@ public:
         int n = nums.size();
         int low = 0;
         int high = n - 1;
-        int ans = INT_MAX;
+        int ans = INT_MAX; // assigning the ans variable a maximum value so like we can find the min
         while (low <= high)
         {
             int mid = (low + high) / 2;
