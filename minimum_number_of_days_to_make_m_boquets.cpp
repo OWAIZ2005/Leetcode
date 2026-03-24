@@ -1,7 +1,7 @@
 class Solution
 {
 public:
-    bool possible(vector<int> &bloomDay, int day, int m, int k) // day->mid
+    bool possible(vector<int> &bloomDay, int day, int m, int k) // day->mid ( as soon the binary search is applied mid value will change)
     {
         int n = bloomDay.size();
         int count = 0;
