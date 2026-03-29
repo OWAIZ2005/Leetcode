@@ -4,6 +4,7 @@ public:
     int findPeakElement(vector<int> &nums)
     {
         int n = nums.size();
+        // first implementing all edge cases
         if (n == 1)
             return 0;
         if (nums[0] > nums[1])
