@@ -3,22 +3,36 @@ class Solution
 public:
     bool isPalindrome(string s)
     {
-        string clean = ""; // opening a empty string named clean
-        for (char c : s)
-        { // range based for loop(type of for loop)
-            if (isalnum(c))
+        int n = s.size();
+        int j = 0;
+
+        for (int i = 0; i < n; i++)
+        {
+            if (isalnum(s[i]))
             {
-                clean += tolower(c); // after converrting all the characters in string to lowercase and removing spaces and extra characters we add it to the a new string named clean
+                s[j] = tolower(s[i]);
+                j++;
             }
         }
-        int left = 0, right = clean.size() - 1;
-        while (left < right)
+        s.resize(j);
+        cout << "word : " << s;
+        int start = 0;
+        int end = s.size() - 1;
+
+        while (start < end)
         {
-            if (clean[left] != clean[right])
+            if (s[start] == s[end])
+            {
+                start++;
+                end--;
+            }
+            else
+            {
                 return false;
-            left++;
-            right--;
+            }
         }
         return true;
     }
 };
+
+//// so like in order to have a string with no spaces and extra charecter which include speacial as well we take a pointer j and we use that j pointer to convert charecters in a string to lowercase and we use isalnum so like this function basicakkt does not include any special charecters or spaces. and also we use the j  pointer approch because we do not need to create a new string to convert a given string to isalnum
