@@ -17,3 +17,5 @@ public:
         delete temp;
     }
 };
+
+// basically in this question head is not given so what we do is we copy the element thaT NEEDS be deleteed to the adjacent element and delete the eleement to be deleted
