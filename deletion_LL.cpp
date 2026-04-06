@@ -105,3 +105,5 @@ int main()
     head = deleteK(head, 8);
     print(head);
 }
+
+// so basically this has all the deleting varieties
