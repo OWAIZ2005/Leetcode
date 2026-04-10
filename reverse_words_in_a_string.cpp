@@ -13,7 +13,7 @@ public:
 
         reverse(words.begin(), words.end());
 
-        // from this step we will be rebuilding the string
+        // from this step we will be rebuilding the entire string
         int n = words.size();
         string ans = "";
         for (int i = 0; i < n; i++)
