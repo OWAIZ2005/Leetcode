@@ -4,7 +4,7 @@ public:
         int n = nums.size();
 
         int cA = 0;
-        int cB = 0;
+        int cB = 1;
         int countA = 0;
         int countB = 0;
 
