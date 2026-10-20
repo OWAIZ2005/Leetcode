@@ -13,4 +13,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0596-classes-with-at-least-5-students](https://github.com/OWAIZ2005/Leetcode/tree/master/0596-classes-with-at-least-5-students) |
 | [0620-not-boring-movies](https://github.com/OWAIZ2005/Leetcode/tree/master/0620-not-boring-movies) |
 | [1757-recyclable-and-low-fat-products](https://github.com/OWAIZ2005/Leetcode/tree/master/1757-recyclable-and-low-fat-products) |
+## Math
+|  |
+| ------- |
+| [2235-add-two-integers](https://github.com/OWAIZ2005/Leetcode/tree/master/2235-add-two-integers) |
 <!---LeetCode Topics End-->
